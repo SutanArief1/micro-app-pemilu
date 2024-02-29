@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
-import logo from "../assets/images/logo.png";
+import logo from "@assets/images/logo.png";
 
-function Navbar() {
+function NavbarUser() {
   const [isLogin, setIsLogin] = useState(false)
 
   useEffect(() => {
     console.log(`status login: `, isLogin);
-
   }, [isLogin])
 
   const isLoggedIn = () => {
@@ -19,7 +18,7 @@ function Navbar() {
 
   return (
     <>
-      <div className="flex justify-between px-16 py-4 bg-black">
+      <div className="flex justify-between px-[150px] py-4 bg-black">
         <div className="flex text-white items-center gap-x-5">
           <div>
             <img src={logo} className="w-10 h-10" />
@@ -59,4 +58,4 @@ function Navbar() {
 
 }
 
-export default Navbar;
+export default NavbarUser;
