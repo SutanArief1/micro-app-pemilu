@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom'
 import thumbnail from '../assets/images/thumbnail.png'
 import NavbarUser from '../components/navbar/navbarUser'
 
@@ -9,7 +10,9 @@ function DetailArticle() {
       <div className="bg-[#CECECE] px-[150px] flex flex-col gap-10 font-inter">
         <div className="bg-white p-7">
           <div className="flex justify-between mb-10">
-            <button className="font-semibold">←  Beranda</button>
+            <NavLink to="/home">
+              <button className="font-semibold">←  Beranda</button>
+            </NavLink>
             <h2 className="flex-1 text-center font-semibold">BERITA HARI INI</h2>
           </div>
           <div className="flex flex-col items-center text-center">

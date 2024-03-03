@@ -18,7 +18,7 @@ function App() {
       <Routes>
         <Route path="/" Component={ModalLogin} />
         <Route path="/home" Component={Home} />
-        <Route path="/detail-page" Component={DetailArticle} />
+        <Route path="/detail-article" Component={DetailArticle} />
         {/* restricted */}
         <Route path="/vote" Component={Vote} />
         <Route path="/dashboard-admin" Component={DashboardAdmin} />
