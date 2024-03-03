@@ -1,9 +1,11 @@
 import thumbnail from '../assets/images/thumbnail.png'
+import NavbarUser from '../components/navbar/navbarUser'
 
 function DetailArticle() {
 
   return (
     <>
+      <NavbarUser />
       <div className="bg-[#CECECE] px-[150px] flex flex-col gap-10 font-inter">
         <div className="bg-white p-7">
           <div className="flex justify-between mb-10">

@@ -1,9 +1,12 @@
 import profilePicture from '../assets/images/profile-picture1.png'
+import PieChart from '../components/chart'
+import NavbarUser from '../components/navbar/navbarUser'
 
 function Vote() {
 
   return (
     <>
+      <NavbarUser />
       <div className="bg-[#CECECE] flex flex-col gap-10 font-inter">
         <div className="bg-white p-20">
           <div className="flex flex-col items-center text-center">
@@ -13,7 +16,9 @@ function Vote() {
             <div className="flex">
               <div className="flex flex-col basis-1/2 justify-center items-center">
                 <h2 className="text-4xl mb-8">Hasil :</h2>
-                <div className="w-[377px] h-[377px] border border-black rounded-full"></div>
+                <div>
+                  <PieChart />
+                </div>
               </div>
               <div className="basis-1/2 flex flex-col gap-10">
                 <div className="w-[657px] h-[120px] border shadow-lg bg-[#FF6384] rounded-lg">

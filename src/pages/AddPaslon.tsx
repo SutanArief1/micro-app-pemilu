@@ -1,9 +1,11 @@
 import profilePicture from "../assets/images/profile-picture1.png";
+import NavbarAdmin from "../components/navbar/navbarAdmin";
 
 function AddPaslon() {
 
   return (
     <>
+      <NavbarAdmin />
       <div className="p-20">
         <div className="flex flex-col items-center text-center">
           <h1 className="text-4xl font-bold text-[#5d5a00] mb-14">ADD PASLON</h1>

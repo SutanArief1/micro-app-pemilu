@@ -1,9 +1,11 @@
 import profilePicture from '../assets/images/profile-picture1.png'
+import NavbarAdmin from '../components/navbar/navbarAdmin'
 
 function DashboardAdmin() {
 
   return (
     <>
+      <NavbarAdmin />
       <div className="bg-[#CECECE] gap-10 font-inter">
         <div className="bg-white p-20 px-[150px]">
           <div className="flex flex-col items-center text-center">
@@ -49,7 +51,7 @@ function DashboardAdmin() {
           <div className="flex flex-col items-center text-center p-10">
             <h1 className="text-4xl font-bold text-[#5d5a00]">LIST VOTER</h1>
           </div>
-          <div className='flex flex-col gap-10 border border-black'>
+          <div className='flex flex-col gap-10'>
             <div className='flex justify-center'>
               <table className="table-auto border-collapse border border-slate-500">
                 <thead>
