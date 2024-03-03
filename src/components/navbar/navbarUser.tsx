@@ -6,24 +6,22 @@ function NavbarUser() {
   return (
     <>
       <div className="flex justify-between px-[150px] py-4 bg-black">
-        <div className="flex text-white items-center gap-x-5">
-          <div>
-            <img src={logo} className="w-10 h-10" />
+        <NavLink to="/home">
+          <div className="flex text-white items-center gap-x-5">
+            <div>
+              <img src={logo} className="w-10 h-10" />
+            </div>
+            <div className="font-bold">
+              <p>PEMILU PRESIDEN DUMBWAYS.ID</p>
+            </div>
           </div>
-          <div className="font-bold">
-            <p>PEMILU PRESIDEN DUMBWAYS.ID</p>
-          </div>
-        </div>
+        </NavLink>
         <div className="flex items-center gap-x-5">
           <div>
             <ul className="flex text-white gap-x-5">
-              <NavLink to='/list-partai'>
-                <li>Partai</li>
-              </NavLink>
+              <li>Partai</li>
               <li>|</li>
-              <NavLink to="/list-paslon">
-                <li>Paslon</li>
-              </NavLink>
+              <li>Paslon</li>
               <li>|</li>
               <NavLink to="/vote">
                 <li>Voting</li>
