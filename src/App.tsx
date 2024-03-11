@@ -10,13 +10,14 @@ import AddPartai from "./pages/AddPartai";
 import ModalLogin from "./components/modalLogin";
 import ModalRegister from "./components/modalRegister";
 import ModalVote from "./components/modalVote";
+import Modal from "./pages/Test";
 
 function App() {
 
   return (
     <div>
       <Routes>
-        <Route path="/" Component={ModalLogin} />
+        <Route path="/" Component={Home} />
         <Route path="/home" Component={Home} />
         <Route path="/detail-article" Component={DetailArticle} />
         {/* restricted */}
@@ -29,6 +30,7 @@ function App() {
         <Route path="/login" Component={ModalLogin} />
         <Route path="/register" Component={ModalRegister} />
         <Route path="/voting" Component={ModalVote} />
+        <Route path="/test" Component={Modal} />
       </Routes>
     </div>
   )

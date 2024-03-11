@@ -1,4 +1,5 @@
 import profilePicture from '../assets/images/profile-picture1.png'
+import InfoPaslon from '../components/carousel'
 import PieChart from '../components/chart'
 import NavbarUser from '../components/navbar/navbarUser'
 
@@ -68,27 +69,7 @@ function Vote() {
           <div className="flex flex-col items-center text-center">
             <h1 className="text-4xl font-bold text-[#5d5a00] mb-14">INFO PASLON</h1>
           </div>
-          <div className="h-[494px] w-3/5 flex gap-5 items-center bg-white p-10 shadow-xl">
-            <div>
-              <img src={profilePicture} alt="profile-picture-paslon-1" />
-            </div>
-            <div className='font-medium'>
-              <h4 className='font-bold'>Nomor Urut : 1</h4>
-              <h1 className='mb-4 font-bold text-[#5E0000] text-2xl'>CINTARA SURYA PALOH</h1>
-              <h4>Visi & Misi :</h4>
-              <ul className="list-disc list-inside mb-5">
-                <li>Memindahkan Indonesia ke Isekai.</li>
-                <li>Nonton anime 3x sehari.</li>
-                <li>Melakukan peresapan pada budaya jepang.</li>
-              </ul>
-              <h4>Koalisi :</h4>
-              <ul className="list-disc list-inside mb-5">
-                <li>Partai Persatuan Wiboo.</li>
-                <li>Partai Redbull.</li>
-                <li>Partai Black Magic.</li>
-              </ul>
-            </div>
-          </div>
+          <InfoPaslon />
         </div>
         <div className="h-[384px] bg-white flex justify-center items-center">
           <h1 className="font-bold text-4xl text-center w-3/5 text-red-500">PILIH BERDASARKAN GACHA TIDAK USAH SERIUS YANG PENTING TIDAK MELEGALKAN SLOT</h1>

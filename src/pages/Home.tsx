@@ -12,14 +12,16 @@ function Home() {
       <NavbarUser />
       <div className="bg-[#CECECE] px-[150px] py-[45px] flex flex-col gap-10">
         <Banner />
-        <div className='flex flex-wrap mb-2 gap-5'>
-          {dataDummyArticle.map((article, index) => {
-            if (!index) {
-              return <MainArticle {...article} />
-            } else {
-              return <Article {...article} />
-            }
-          })}
+        <div className='flex justify-center'>
+          <div className="flex justify-start flex-wrap gap-[5%] h-fit">
+            {dataDummyArticle.map((article, index) => {
+              if (!index) {
+                return <MainArticle {...article} />
+              } else {
+                return <Article {...article} />
+              }
+            })}
+          </div>
         </div>
       </div>
       <Body />

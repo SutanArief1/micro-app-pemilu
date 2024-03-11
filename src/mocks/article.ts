@@ -23,14 +23,28 @@ export const dataDummyArticle = [
     author: 'SUPER ADMIN'
   },
   {
-    id: 3,
+    id: 4,
     image: thumbnail,
     date: 'JUMAT, 20 MEI 2023',
     title: 'KPU TETAPKAN 3 MENTOR TERBAIK',
     author: 'SUPER ADMIN'
   },
   {
-    id: 3,
+    id: 5,
+    image: thumbnail,
+    date: 'JUMAT, 20 MEI 2023',
+    title: 'KPU TETAPKAN 3 MENTOR TERBAIK',
+    author: 'SUPER ADMIN'
+  },
+  {
+    id: 4,
+    image: thumbnail,
+    date: 'JUMAT, 20 MEI 2023',
+    title: 'KPU TETAPKAN 3 MENTOR TERBAIK',
+    author: 'SUPER ADMIN'
+  },
+  {
+    id: 5,
     image: thumbnail,
     date: 'JUMAT, 20 MEI 2023',
     title: 'KPU TETAPKAN 3 MENTOR TERBAIK',
