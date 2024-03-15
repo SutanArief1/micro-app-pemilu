@@ -11,8 +11,23 @@ import ModalLogin from "./components/modalLogin";
 import ModalRegister from "./components/modalRegister";
 import ModalVote from "./components/modalVote";
 import Modal from "./pages/Test";
+import { useEffect } from "react";
 
 function App() {
+  const findUsers = async () => {
+    try {
+      const response = await fetch("http://localhost:3000/api/v1/user")
+
+      console.log(await response.json());
+
+    } catch (error) {
+      throw error
+    }
+  }
+
+  useEffect(() => {
+    findUsers()
+  }, [])
 
   return (
     <div>

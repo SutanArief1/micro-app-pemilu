@@ -1,7 +1,18 @@
 import logo from "@assets/images/logo.png";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import ModalLogin from "../modalLogin";
+import ModalRegister from "../modalRegister";
 
 function NavbarAdmin() {
+  const [showModal, setShowModal] = useState(false)
+  const [showModalRegister, setShowModalRegister] = useState(false)
+
+  const handlerShowModal = () => { setShowModal(true) }
+  const handlerRegistrationClicked = () => {
+    setShowModalRegister(true)
+    setShowModal(false)
+  }
 
   return (
     <>
@@ -29,14 +40,18 @@ function NavbarAdmin() {
             </ul>
           </div>
           <div>
-            <NavLink to="/login">
-              <button className="bg-white text-black px-5 py-2 rounded font-bold">
-                LOGIN
-              </button>
-            </NavLink>
+            <button onClick={handlerShowModal} className="bg-white text-black px-5 py-2 rounded font-bold">
+              LOGIN
+            </button>
           </div>
         </div>
       </div>
+      {
+        showModal && <ModalLogin onClose={() => (setShowModal(false))} onRegistrationClicked={handlerRegistrationClicked} />
+      }
+      {
+        showModalRegister && <ModalRegister onClose={() => (setShowModalRegister(false))} />
+      }
     </>
   )
 

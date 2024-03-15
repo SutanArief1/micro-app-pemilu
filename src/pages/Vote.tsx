@@ -1,4 +1,3 @@
-import profilePicture from '../assets/images/profile-picture1.png'
 import InfoPaslon from '../components/carousel'
 import PieChart from '../components/chart'
 import NavbarUser from '../components/navbar/navbarUser'

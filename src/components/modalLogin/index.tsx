@@ -1,5 +1,5 @@
-import { ChangeEvent, FormEvent, ReactNode, useEffect, useState } from "react"
-import { NavLink, useNavigate } from "react-router-dom"
+import { ChangeEvent, FormEvent, ReactNode, useState } from "react"
+import { useNavigate } from "react-router-dom"
 import { dataDummyUsers } from "../../mocks/users"
 import Modal from "../modal"
 
@@ -8,7 +8,7 @@ interface IModalLoginProps {
   onRegistrationClicked: () => void
 }
 
-function ModalLogin({ onClose, onRegistrationClicked }: IModalLoginProps): ReactNode {
+function ModalLogin({ onClose, onRegistrationClicked }: IModalLoginProps) {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
   const [isLoginAdmin, setIsLoginAdmin] = useState(false)

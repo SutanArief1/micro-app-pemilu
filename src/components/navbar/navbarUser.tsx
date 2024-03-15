@@ -30,9 +30,13 @@ function NavbarUser() {
         <div className="flex items-center gap-x-5">
           <div>
             <ul className="flex text-white gap-x-5">
-              <li>Partai</li>
+              <NavLink to="/list-partai">
+                <li>Partai</li>
+              </NavLink>
               <li>|</li>
-              <li>Paslon</li>
+              <NavLink to="/list-paslon">
+                <li>Paslon</li>
+              </NavLink>
               <li>|</li>
               <NavLink to="/vote">
                 <li>Voting</li>
@@ -40,11 +44,9 @@ function NavbarUser() {
             </ul>
           </div>
           <div>
-            {/* <NavLink to="/login"> */}
             <button onClick={handlerShowModal} className="bg-white text-black px-5 py-2 rounded font-bold">
               LOGIN
             </button>
-            {/* </NavLink> */}
           </div>
         </div>
       </div>
